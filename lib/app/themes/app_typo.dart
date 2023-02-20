@@ -39,7 +39,7 @@ class AppTypoB {
   static TextStyle content = GoogleFonts.montserrat(
       fontSize: 12.sp, fontWeight: FontWeight.w400, color: Colors.black);
   static TextStyle jam = GoogleFonts.montserrat(
-      fontSize: 12.sp,
+      fontSize: 10.sp,
       fontWeight: FontWeight.w500,
       color: Colors.black,
       textStyle: TextStyle(fontStyle: FontStyle.italic));

@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
                       ));
                 } else {
                   return FutureBuilder(
-                      future: authC.firstInitialize(),
+                      future: authC.firstInitialized(),
                       builder: (context, snap) {
                         return SplashScreen();
                       });

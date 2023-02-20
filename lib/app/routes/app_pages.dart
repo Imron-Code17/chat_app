@@ -47,7 +47,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.CHAT_ROOM,
-      page: () => const ChatRoomView(),
+      page: () => ChatRoomView(),
       binding: ChatRoomBinding(),
     ),
     GetPage(
@@ -57,7 +57,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.UPDATE_STATUS,
-      page: () => const UpdateStatusView(),
+      page: () => UpdateStatusView(),
       binding: UpdateStatusBinding(),
     ),
     GetPage(

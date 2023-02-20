@@ -1,3 +1,4 @@
+import 'package:chat_app/app/controllers/auth_controller.dart';
 import 'package:chat_app/app/themes/app_color.dart';
 import 'package:chat_app/app/themes/app_icon.dart';
 import 'package:chat_app/app/themes/app_typo.dart';
@@ -9,7 +10,7 @@ import 'package:get/get.dart';
 import '../controllers/update_status_controller.dart';
 
 class UpdateStatusView extends GetView<UpdateStatusController> {
-  const UpdateStatusView({Key? key}) : super(key: key);
+  final authC = Get.find<AuthController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +60,9 @@ class UpdateStatusView extends GetView<UpdateStatusController> {
                           backgroundColor: AppColor.primary,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(28.r))),
-                      onPressed: () {},
+                      onPressed: () {
+                        authC.updateStatus(controller.statusC.text);
+                      },
                       child: Text('Update Status', style: AppTypoW.heading2)))
             ],
           ),
