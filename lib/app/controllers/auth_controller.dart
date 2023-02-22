@@ -169,6 +169,7 @@ class AuthController extends GetxController {
             "lastSignInTime": userCredential!.user!.metadata.lastSignInTime!
                 .toIso8601String(),
             "updatedTime": DateTime.now().toIso8601String(),
+            "isOnline": "true"
           });
 
           await users.doc(_currentUser!.email).collection("chats");

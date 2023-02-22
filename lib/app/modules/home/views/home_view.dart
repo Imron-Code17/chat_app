@@ -131,8 +131,10 @@ class HomeView extends GetView<HomeController> {
                                     ),
                                     title: Text("${data["name"]}",
                                         style: AppTypoB.highlight2),
-                                    subtitle: Text("${data["status"]}",
+                                    subtitle: Text("Online",
                                         style: AppTypoH.highlight3),
+                                    // subtitle: Text("${data["status"]}",
+                                    //     style: AppTypoH.highlight3),
                                     trailing: listDocsChats[index]
                                                 ["total_unread"] ==
                                             0

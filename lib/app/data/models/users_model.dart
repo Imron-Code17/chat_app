@@ -32,6 +32,7 @@ class UsersModel {
   String? photoUrl;
   String? status;
   String? updatedTime;
+
   List<ChatUser>? chats;
 
   factory UsersModel.fromJson(Map<String, dynamic> json) => UsersModel(
